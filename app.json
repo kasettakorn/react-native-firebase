@@ -1,0 +1,12 @@
+{
+  "name": "alkornithm",
+  "displayName": "alkornithm",
+  "expo": {
+    "name": "alkornithm",
+    "slug": "alkornithm",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
