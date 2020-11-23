@@ -5,10 +5,14 @@
     "ios": "react-native run-ios",
     "web": "expo start --web",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "test-api": "cd api && flask test",
+    "start-api": "venv/bin/flask run --no-debugger"
   },
   "dependencies": {
     "expo": "~39.0.2",
+    "expo-camera": "~9.0.0",
+    "expo-face-detector": "~8.3.0",
     "expo-splash-screen": "~0.6.2",
     "expo-status-bar": "~1.0.2",
     "expo-updates": "~0.3.2",
@@ -16,6 +20,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "~0.63.3",
+    "react-native-dotenv": "^2.4.2",
     "react-native-gesture-handler": "~1.7.0",
     "react-native-reanimated": "~1.13.0",
     "react-native-screens": "~2.10.1",
@@ -31,5 +36,6 @@
   "jest": {
     "preset": "react-native"
   },
-  "private": true
+  "private": true,
+  "proxy": "http://localhost:5000"
 }
